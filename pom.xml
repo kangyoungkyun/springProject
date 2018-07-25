@@ -34,13 +34,39 @@
 		</dependency>
 		
 				
-		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<!-- mysql의 jdbc 연결 라이브러리 -->
 		<dependency>
 		    <groupId>mysql</groupId>
 		    <artifactId>mysql-connector-java</artifactId>
 		    <version>8.0.11</version>
 		</dependency>
 				
+				
+		<!-- mybitis 연동 라이브러리 -->		
+				
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis</artifactId>
+		    <version>3.2.8</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis-spring</artifactId>
+		    <version>1.2.2</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-jdbc</artifactId>
+		    <version>4.1.7.RELEASE</version>
+		</dependency>				
+				
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-test</artifactId>
+		    <version>4.1.7.RELEASE</version>
+		</dependency>
 				
 				
 		<!-- AspectJ -->
