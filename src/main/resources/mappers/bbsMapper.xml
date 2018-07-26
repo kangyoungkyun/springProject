@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  
+  <mapper namespace="com.spring.dao.BbsDAO">
+  
+  <insert id="insert">
+  
+  	insert into tbl_board (subject, content, writer) 
+  	values (#{subject}, #{content}, #{writer})
+ 
+  </insert>
+  
+  
+  
+  <select id="read" resultType="com.spring.vo.BbsVO">
+  
+  select bid, subject, content, writer, regdate, hit 
+  from 
+  tbl_board 
+  where bid = #{bid}
+  
+  </select>
+  
+  
+  <update id="update">
+  	update tbl_board set subject = #{subject}, content = #{content} 
+  	where bid = #{bid}
+  
+  </update>
+  
+  
+  
+  
+  <delete id="delete"> 
+  
+  	delete from tbl_board where bid=#{bid}
+  </delete>
+  
+  
+  
+  <select id="list" resultType="com.spring.vo.BbsVO">
+  	<![CDATA[
+  	
+  		select 
+  			bid, subject, content, writer, regdate, hit 
+  		from 
+  			table_board 
+  		where bid > 0 
+  		order by bid desc, regdate desc
+  
+  	]]>
+  
+  </select>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </mapper>
