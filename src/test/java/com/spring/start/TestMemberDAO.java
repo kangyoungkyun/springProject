@@ -28,7 +28,7 @@ public class TestMemberDAO {
 	@Test
 	public void testInsertMember() throws Exception{
 		MemberVO mvo = new MemberVO();
-		mvo.setUid("test1");
+		mvo.setUid("test2");
 		mvo.setPwd("1234");
 		mvo.setUsername("kangyoungkyuen");
 		mvo.setEmail("abcnt@naver.com");
