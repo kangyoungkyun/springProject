@@ -9,7 +9,7 @@
   
   <insert id="insert">
   
-  	insert into tbl_board (subject, content, writer) 
+  	insert into table_board (subject, content, writer) 
   	values (#{subject}, #{content}, #{writer})
  
   </insert>
@@ -20,14 +20,14 @@
   
   select bid, subject, content, writer, regdate, hit 
   from 
-  tbl_board 
+  table_board 
   where bid = #{bid}
   
   </select>
   
   
   <update id="update">
-  	update tbl_board set subject = #{subject}, content = #{content} 
+  	update table_board set subject = #{subject}, content = #{content} 
   	where bid = #{bid}
   
   </update>
@@ -37,7 +37,7 @@
   
   <delete id="delete"> 
   
-  	delete from tbl_board where bid=#{bid}
+  	delete from table_board where bid=#{bid}
   </delete>
   
   

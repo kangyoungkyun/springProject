@@ -31,11 +31,12 @@ public class BbsVO {
 	private String writer;
 	private Date regdate;
 	private int hit;
-	public Integer getUid() {
+	
+	public Integer getBid() {
 		return bid;
 	}
-	public void setUid(Integer uid) {
-		this.bid = uid;
+	public void setBid(Integer bid) {
+		this.bid = bid;
 	}
 	public String getSubject() {
 		return subject;
