@@ -2,6 +2,27 @@ package com.spring.vo;
 
 import java.util.Date;
 
+/*
+ * 
+ *
+ create table table_board(
+    
+		bid int not null auto_increment,
+        subject varchar(200) not null,
+        content text null,
+        writer varchar(50) not null,
+        regdate timestamp not null default now(),
+        hit int default 0,
+        primary key(bid)
+    );
+    
+    insert into table_board(subject,content, writer) values('test subject', 'hello world', 'kang');
+    
+ *
+ *
+ */
+ 
+
 public class BbsVO {
 	
 	private Integer uid;
