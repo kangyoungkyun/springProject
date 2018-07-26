@@ -25,17 +25,17 @@ import java.util.Date;
 
 public class BbsVO {
 	
-	private Integer uid;
+	private Integer bid;
 	private String subject;
 	private String content;
 	private String writer;
 	private Date regdate;
 	private int hit;
 	public Integer getUid() {
-		return uid;
+		return bid;
 	}
 	public void setUid(Integer uid) {
-		this.uid = uid;
+		this.bid = uid;
 	}
 	public String getSubject() {
 		return subject;
@@ -69,7 +69,7 @@ public class BbsVO {
 	}
 	@Override
 	public String toString() {
-		return "BbsVO [uid=" + uid + ", subject=" + subject + ", content=" + content + ", writer=" + writer
+		return "BbsVO [bid=" + bid + ", subject=" + subject + ", content=" + content + ", writer=" + writer
 				+ ", regdate=" + regdate + ", hit=" + hit + "]";
 	}
 	
