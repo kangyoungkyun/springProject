@@ -52,7 +52,8 @@
                 <!--  notification start -->
                 <ul class="nav top-menu">
                    <li><a href="/">home</a></li>
-					<li><a href="/bbs/list">게시판</a></li>
+					<li><a href="/bbs/list">글목록</a></li>
+					<li><a href="/bbs/write">글쓰기</a></li>
                 </ul>
                 <!--  notification end -->
             </div>
